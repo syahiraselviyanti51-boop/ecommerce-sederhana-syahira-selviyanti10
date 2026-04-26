@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastFood Express - Nikmat & Cepat</title>
+    
+    <style>
+        /* BAGIAN CSS: Mengatur Tampilan agar Menarik */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #e63946; /* Merah Khas Fast Food */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .menu-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Kartu Menu */
+        .menu-card {
+            background: white;
+            width: 320px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-bottom: 5px solid #e63946;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Pengaturan Gambar agar Selalu Muncul */
+        .image-box {
+            width: 100%;
+            height: 220px;
+            background-color: #eee;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            color: #e63946;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+            height: 40px;
+        }
+
+        .price {
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2b2d42;
+        }
+
+        .buy-btn {
+            background-color: #f1faee;
+            color: #e63946;
+            border: 2px solid #e63946;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #e63946;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #2b2d42;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FastFood Express 🍔</h1>
+        <p>Lezat, Cepat, dan Mengenyangkan!</p>
+    </header>
+
+    <main class="menu-container">
+        
+        <div class="menu-card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600" alt="Burger">
+            </div>
+            <div class="content">
+                <h2>Beef Burger Deluxe</h2>
+                <p>Daging sapi panggang juicy dengan keju lumer dan sayuran segar.</p>
+                <span class="price">Rp 60.000</span>
+                <a href="#" class="buy-btn">Pesan Sekarang</a>
+              </div>
+        </div>
+
+       <div class="menu-card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=400&auto=format&fit=crop">
+            </div>
+            <div class="content">
+                <h2>Ayam Crispy</h2>
+                <p>Daging ayam yang juicy dengan tambahan sambal matah.</p>
+                <span class="price">Rp 45.000</span>
+                <a href="#" class="buy-btn">Pesan Sekarang</a>
+              </div>
+        </div>
+        
+        
+        <div class="menu-card">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=600" alt="Kentang Goreng">
+            </div>
+            <div class="content">
+                <h2>French Fries Jumbo</h2>
+                <p>Kentang goreng gurih dengan taburan garam laut pilihan.</p>
+                <span class="price">Rp 30.000</span>
+                <a href="#" class="buy-btn">Pesan Sekarang</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FastFood Express Indonesia | Nikmati Sensasi Lezatnya!</p>
+    </footer>
+
+</body>
+</html>
